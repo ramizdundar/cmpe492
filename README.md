@@ -1,7 +1,23 @@
 # Medical Transformers
 
-In this work, we developed an image classification model for medical X-ray images using the [Chexpert](https://stanfordmlgroup.github.io/competitions/chexpert) dataset. We also used [Vision Transformers](https://arxiv.org/abs/2010.11929) for the first time in the medical domain. Our proposed model used the combined architecture of convolutional neural networks and the Vision Transformer.
+## Abstract
 
-We developed strided vision transformers where images are given into vision transformers in a strided fashion. In our experiments, we observed that we gained close to one percent increase in mean AUC score using the strided version. This increase is especially more apparent in the distilled version of the vision transformer.
+Transformers are a widely adopted technique in
+the natural language processing research community due
+to their powerful attention and parallelization capabilities.
+However in the computer vision scene, before vision
+transformer (ViT), pure applications of transformers on
+images often are underperformed compared to convolutional
+neural networks or hybrid models (CNNs and transformers
+together). Vision transformer (ViT), although a relatively
+new approach, has the state of the art results in image
+classification. In this paper, we apply vision transformers
+(ViT) to the medical domain for the first time. We also
+propose a strided (SViT) approach that improves both vision
+transformer (ViT) and vision transformer trained with
+distillation tokens (DViT). Further analyses and comparisons
+between different applications of vision transformers are given.
 
-We also compared our architecture with six different variations of vision transformers that we have mentioned in the previous sections. We demonstrated that using vision transformers together with convolutional architecture achieves much better performance than vision transformers alone. Our model also managed to beat Stanford’s baseline model. Thus we believe vision transformers will have potential in the medical domain.
+## Poster
+
+![medical transformer poster](medical_transformers_poster.jpg)
